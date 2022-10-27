@@ -5,6 +5,9 @@ const { storeDataToDatabase, getDataFromDatabase } = require("./storeAndFetchDat
 connectDB();
 
 // initialize new data for insert to the database
+/** Should change everytime when you want insert a
+  new data on database. Otherwise, it will give a 
+  MongoDB duplicate key error  */
 const name = "Rakibul";
 const ID = "2165465";
 const email = "xzy@mail.com";
